@@ -1,0 +1,285 @@
+:root {
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.bg-up {
+    height: 15vh;
+    width: 100%;
+    background-color: #0596875b;
+}
+
+.bg-down {
+    height: 85vh;
+    width: 100%;
+    background-color: #dadbd378;
+}
+
+.cont-flex {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    background-color: rgba(127, 255, 212, 0.248);
+}
+
+.container {
+    width: 1200px;
+    margin: 1rem auto;
+    height: calc(100% - 2rem);
+    top: 0px;
+    z-index: 1;
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+
+
+/* INFO GENERALI SIDEBAR */
+.gen-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    background-color: #EAEAEA;
+    height: 8.5vh;
+    border-right: solid 1px rgb(211, 209, 209);
+}
+
+.pers-info {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #222;
+}
+
+.gen-icon {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #B1B1B1;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.avatar {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+
+/* NOTIFICHE SIDEBAR */
+.notifiche {
+    background-color: #8DDAFC;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+}
+
+.icon-notifica {
+    width: 3rem;
+    padding: 1rem 1rem 1rem 0.9rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icon-notifica i {
+    width: 1rem;
+    color: #8DDAFC;
+}
+
+.testo-notifica {
+    font-size: 13px;
+}
+
+.testo-notifica a {
+    color: #605e5e;
+}
+
+
+/* RICERCA SIDEBAR */
+.ricerca {
+    padding: 0.3rem;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+}
+
+.btn-ricerca {
+    border: none;
+    background-color: white;
+    padding: 0.3rem 1rem;
+    color: #B1B1B1;
+}
+
+.text-ricerca {
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    width: 85%;
+}
+
+
+/* CARD CHAT SIDEBAR */
+.chat-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    color: #222;
+    background-color: white;
+    border-bottom: solid 1px rgba(178, 178, 178, 0.243);
+}
+
+.selected {
+    background-color: #EAEAEA;
+}
+
+.img-nome-user {
+    display: flex;
+    gap: 20px;
+}
+
+.cont-img-avatar {
+    width: 16%;
+}
+
+.user-info {
+    display: flex;
+    width: 40%;
+    gap: 15px;
+    font-size: 18px;
+}
+
+
+.sottotesto {
+    font-size: 11px;
+    color: grey;
+}
+
+.orario {
+    font-size: 11px;
+    color: grey;
+}
+
+
+
+/* CONTENUTO */
+.contenuto {
+    width: 67%;
+    height: 100%;
+}
+
+/* INFORMAZIONI CHAT */
+.chat-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    color: #222;
+    height: 8.5vh;
+}
+
+.chat-img {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.cont-chat-img {
+    width: 22%;
+}
+
+.user-chat-info {
+    width: 70%;
+}
+
+/* CHAT UTENTE */
+.chat {
+    background-image: url("/img/mine.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    padding: 2rem 3.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cont-msg-inviato {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.msg {
+    width: 44%;
+    padding: 0.8rem 0.6rem;
+    border-radius: 10px;
+    display: flex;
+}
+
+.inviato {
+    background-color: #D6F9BA;
+}
+
+.cont-msg-ricevuto {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ricevuto {
+    background-color: white;
+    align-items: flex-start;
+}
+
+/* INVIO MESSAGGI */
+.invio-msg {
+    width: 100%;
+    height: 7.7vh;
+    background-color: #F3EEE9;
+    display: flex;
+    padding: 0.65rem 0px
+}
+
+.icon-invio-msg {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invio {
+    width: 80%;
+}
+
+.input-msg {
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 1rem 0.7rem;
+}
+
+.icon-invio {
+    border: none;
+    font-size: 22px;
+    color: grey;
+}
